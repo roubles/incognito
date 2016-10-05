@@ -4,7 +4,7 @@ The goal is to avoid putting tape on your isight cameras and headphone jacks ala
 
 The 'incognito' script is intended to run every minute via cron, and disable your mic, speakers and camera. No more tape. Yay!
 
-If you wanna listen to some music, open a terminal and run the 'openly' script and everything works as normal.
+If you want to temporarily disable 'incognito' open a terminal and run the 'openly' script and everything works as normal.
 
 ## Install
 
@@ -34,4 +34,10 @@ $ sudo openly
 Password:
 Disabling incognito.
 Press any key to go incognito again.
+```
+
+## Uninstall
+
+```
+$ curl -sSL https://raw.github.com/roubles/incognito/master/webuninstall.sh | bash
 ```
