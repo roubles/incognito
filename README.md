@@ -10,6 +10,8 @@ NOTE: 'incognito' only works if your root account is not compromised. If a hacke
 
 ## Install
 
+First install [isight-cli](https://github.com/jessedoyle/isight-cli)
+
 ```
 $ curl -sSL https://raw.github.com/roubles/incognito/master/webinstall.sh | bash
 ```
