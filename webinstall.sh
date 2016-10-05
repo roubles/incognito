@@ -37,7 +37,6 @@ function download_script() {
         echo "Error installing script."
         exit 4
     fi
-    echo "Downloading script from: $URL1..."
 }
 
 function chmod_script() {
