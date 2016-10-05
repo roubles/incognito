@@ -6,6 +6,8 @@ The 'incognito' script is intended to run every minute via cron, and disable you
 
 If you want to temporarily disable 'incognito' open a terminal and run the 'openly' script and everything works as normal.
 
+NOTE: 'incognito' only works if your root account is not compromised. If a hacker has your root password, then the only way to prevent it is physically putting a piece of tape on the camera.
+
 ## Install
 
 ```
