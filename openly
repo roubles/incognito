@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# Author: rouble matta
+
+if [ "$(id -u)" != "0" ]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
+
+trap ctrl_c INT
+
+function die() {
+    rm -f /usr/local/incognito.tmp
+    /usr/local/bin/incognito
+    exit 0
+}
+
+function ctrl_c() {
+    die
+}
+
+echo "Disabling incognito."
+if [ -e /usr/local/bin/isight ]; then
+    #Turn on isight camera
+    /usr/local/bin/isight on > /dev/null
+fi
+#Turn on mic
+osascript -e "set volume input volume 100"
+#Turning on output volume is left as an exercise for the user
+
+touch /usr/local/incognito.tmp
+echo "Press any key to go incognito again."
+read varname
+die
