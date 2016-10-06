@@ -4,7 +4,7 @@ Recently the [FBI director came out in support of taping your webcams](http://ww
 
 This script, incognito, intends to make it more difficult for a hacker to get to your webcam (isight) and mic of your mac, by removing (actually, just moving) the camera drivers and zeroing the input volume on your mics. It is literally like ten lines in a bash script.
 
-As an added bonus it also zeros the output volume on your speakers - this is just done to primarily to prevent your computer from broadcasting any embarssing music stations you may listen to.
+As an added bonus it also zeros the output volume on your speakers - this is just done to primarily to prevent your computer from broadcasting any embarassing music stations you may listen to.
 
 Hosever, incognito is not full proof. A hacker with root access could just put all the drivers back in place and voila he has control. It is just an extra layer of obfuscation - security through obscurity. In the security business, it is well known that security through obscurity should never be your only security mechanism. So, you should probably still tape your webcams. 'incognito' can help if the tape falls off.
 
